@@ -1,22 +1,23 @@
 
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCJApA1Q2fwTkCeWFD0M_1EBPSXawnB758",
-    authDomain: "train-scheduler-7525a.firebaseapp.com",
-    databaseURL: "https://train-scheduler-7525a.firebaseio.com",
-    projectId: "train-scheduler-7525a",
-    storageBucket: "",
-    messagingSenderId: "768471784199"
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8dNPZcDRi_HVXTPg1W9so48m5l26Fi-g",
+    authDomain: "trainscheduler-cab48.firebaseapp.com",
+    databaseURL: "https://trainscheduler-cab48.firebaseio.com",
+    projectId: "trainscheduler-cab48",
+    storageBucket: "trainscheduler-cab48.appspot.com",
+    messagingSenderId: "149909566602",
+    appId: "1:149909566602:web:92b76742e7fac139"
   };
   
-  firebase.initializeApp(config);
+  
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
   
   // Create a variable to reference the database
   var database=firebase.database();
-  var ref= database.ref('trainInfo');
+  
   
   //Run Time  
   setInterval(function(startTime) {
